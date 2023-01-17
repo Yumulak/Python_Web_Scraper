@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" manifest="PortfolioPage.appcache">
+
+<head>
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/CSS/Stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JavaScript scripts -->
+    <script src="https://kit.fontawesome.com/5757aa79c5.js" crossorigin="anonymous"></script>
+    <script>
+        document.createElement("article");
+        document.createElement("footer");
+        document.createElement("header");
+        document.createElement("nav");
+    </script>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- head title and tags -->
+    <title>JobScrappy - Job Ad Monitoring Tool</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game Development">
+    <meta name="keywords" content="gaming, games, Game development">
+    <meta name="author" content="Austin Rhodes">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <h1>JobScrappy</h1>
+        <ul class="navigation">
+            <!-- <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="https://drive.google.com/file/d/161KIYlSQokdlwKu-srAkAMMRKY_uMeR8/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" class="nav-link">Resume</a></li> -->
+            <!-- <li><a href="#contact" class="nav-link">Contact</a> -->
+            </li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <main>
+        <!-- portrait -->
+        <!-- <div id="portrait">
+                <img src="assets/Pictures/Blueshirt.JPG" alt="" width="230" height="200">
+            </div> -->
+        <!-- hero section -->
+        <section class="hero" id="home">
+            <img src="assets\Pictures\AR_Icon.png" alt="" loading="lazy" class="hero-img" />
+            <div class="bio animate__animated animate__shakeX">
+                <h2>Site Info</h2>
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/xoqzqakb" method="POST">
+                            <div class="form-control">
+                                <label for="site">Site URL</label>
+                                <input type="url" id="url" name="site-url"
+                                    placeholder="Enter the full URL of the careers or job page." class="input-field"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="sender-email"
+                                    placeholder="Enter the email you want results sent to." class="input-field"
+                                    required />
+                            </div>
+                            <!-- <div class="form-control">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="60" rows="10"
+                                    placeholder="Enter your message" class="input-field" required></textarea>
+                            </div> -->
+                            <input type="submit" value="Confirm" id="submit-btn" class="submit-btn" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <!-- <section class="more-about">
+            <h2>More About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+                autem deleniti cupiditate molestias quis unde quae totam porro dicta
+                iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+                nostrum dolor minus, libero delectus praesentium perferendis
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                consequuntur labore? Ea totam voluptas amet!
+            </p>
+        </section> -->
+        <!-- skills -->
+        <!-- <section class="skills" id="skills">
+            <h2 class="skill-header">My Top Skills</h2>
+            <div class="skills-wrapper">
+                <div class="first-set animate__animated animate__pulse" draggable="true" ondragstart="drag(event)">
+                    <img id="icon1" src="assets\icons\HTML5\icons8-html-5-96.svg" draggable="true"
+                        ondragstart="drag(event)" alt="" loading="lazy" class="icon icon-card" />
+                    <img id="icon2" src="assets\icons\CSS3\icons8-css3-96.svg" draggable="true"
+                        ondragstart="drag(event)" alt="" loading="lazy" class="icon icon-card" />
+                    <img id="icon3" src="assets\icons\JS\icons8-javascript-logo-96.svg" draggable="true"
+                        ondragstart="drag(event)" alt="" loading="lazy" class="icon icon-card" />
+                </div>
+                <div class="second-set animate__animated animate__pulse" draggable="true" ondragstart="drag(event)">
+                    <img id="icon4" src="assets\icons\Python\icons8-python-96.svg" draggable="true"
+                        ondragstart="drag(event)" alt="" loading="lazy" class="icon icon-card" />
+                    <img id="icon5" src="assets\icons\CSharp\icons8-c-sharp-logo-100.svg" draggable="true"
+                        ondragstart="drag(event)" alt="" loading="lazy" class="icon icon-card" />
+                    <img id="icon6" src="assets\icons\SQL\icons8-sql-100.png" draggable="true" ondragstart="drag(event)"
+                        alt="" loading="lazy" class="icon icon-card" />
+                </div>
+                <div class="third-set animate__animated animate__pulse">
+                    <img id="icon7" src="assets\icons\C++\icons8-c++-96.svg" draggable="true" ondragstart="drag(event)"
+                        alt="" loading="lazy" class="icon icon-card" />
+                    <img id="icon8" src="assets\icons\Unreal\icons8-unreal-engine-96.svg" draggable="true"
+                        ondragstart="drag(event)" alt="" loading="lazy" class="icon icon-card" />
+                    <a href="https://github.com/Yumulak?tab=repositories"><img id="icon9"
+                            src="assets\icons\Git\icons8-git.svg" draggable="true" ondragstart="drag(event)" alt=""
+                            loading="lazy" class="icon icon-card"></a>
+                </div>
+            </div>
+        </section> -->
+        <!-- drag and drop box -->
+        <!-- <section class="dragdrop" id="dragdrop">
+            <h2 class="dragdrop-header"></h2>
+            <div class="dragdrop-wrapper">
+                <div id="dragbox" ondrop="drop(event)" ondragover="allowDrop(event)">Drag a Skill Here to
+                    See a Project I Made Using It</div>
+            </div>
+        </section> -->
+        <!-- projects -->
+        <!-- <section class="projects" id="projects">
+            <h2 class="projects-title">Personal projects</h2>
+            <div class="projects-container">
+                <div class="project-container project-card"> -->
+        <!-- <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy"
+                                class="project-pic" /> -->
+        <!-- <h3 class="project-title">Block Boy the Monster Slayer</h3>
+                    <p class="project-details">"Block Boy the Monster Slayer" will be a side scrolling action
+                        game about an unlikely
+                        hero
+                        named
+                        "Block
+                        Boy"
+                        who, through a series of unfortunate events, finds himself to be the only hope of saving
+                        his
+                        home
+                        village
+                        from complete destruction at the hands (or claws) of some terrible monsters...</p> -->
+        <!-- add link to project here -->
+        <!-- <a href="#" target="_blank" class="project-link">Check it Out</a> -->
+        <!-- </div>
+                <br>
+                <div class="project-container project-card"> -->
+        <!-- <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy"
+                                class="project-pic" /> -->
+        <!-- <h3 class="project-title">Marvel Cinematic Universe Database</h3>
+                    <p class="project-details">A website where movies within the Marvel Cinematic Universe are
+                        detailed along with the
+                        comic
+                        book
+                        stories
+                        which they are based upon.</p> -->
+        <!-- add link to project here -->
+        <!-- <a href="#" target="_blank" class="project-link">Check it Out</a> -->
+        <!-- <br>
+                </div>
+            </div>
+        </section> -->
+        <!-- contact form -->
+        <!-- <section class="contact" id="contact">
+            <h2>Site Info</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xoqzqakb" method="POST">
+                        <div class="form-control">
+                            <label for="name">Site URL</label>
+                            <input type="text" id="name" name="sender-name"
+                                placeholder="Enter the url of the careers or job page you want to monitor."
+                                class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="sender-email"
+                                placeholder="Enter the email you want results sent to." class="input-field" required />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="60" rows="10" placeholder="Enter your message"
+                                class="input-field" required></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                    </form>
+                </div>
+            </div>
+        </section> -->
+        <!-- <div class="socials">
+            <a href="https://www.linkedin.com/in/austin-rhodes-600aa8203/" target="_blank"><img
+                    src="assets\icons\Linkedin\icons8-linkedin-2.gif" alt="Linkedin" loading="lazy"
+                    class="socicon" /></a>
+            <a href="https://github.com/Yumulak" target="_blank"><img src="assets\icons\Github\icons8-github.gif"
+                    alt="Github" loading="lazy" class="socicon" /></a>
+        </div> -->
+        <i class="scroll-up" id="scroll-up">
+            <img src="assets\icons\Scroll Up\icons8-scroll-up.gif" class="socicon up-arrow" alt="scroll-up" />
+        </i>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy"> Built by <a href="https://github.com/Yumulak" target="_blank">Austin Rhodes</a>
+        </p>
+        <!-- <h2> <span class="boldtext">CONTACT</span></h2>
+        <p> Contact me here: <a
+                href="mailto:yumulacgaming@gmail.com,austinrhodes462@gmail.com">austinrhodes462@gmail.com</a>
+        </p>
+        <p> Find me on Social Media:</p>
+        <a href="https://www.linkedin.com/in/austin-rhodes-600aa8203/" role="button" class="fa fa-linkedin"
+            style="font-size: 50px"></a>
+        <a href="https://github.com/Yumulak" role="button" class="fa fa-github" style="font-size: 50px"></a> -->
+    </footer>
+    <!-- website scripts -->
+    <script src="assets/js/app.js"></script>
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
